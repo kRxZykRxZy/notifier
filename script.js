@@ -159,7 +159,7 @@ function checkCount(user, isUserSwitch){
     //var the_link = document.getElementById('user_'+name)
     //the_link.innerText = name+' (0)'
 
-    fetch('https://fluffyscratch.hampton.pw/notifications/v2/'+name+'?avoidcache='+Math.random())
+    fetch('https://corsproxy.io/?url=api.scratch.mit.edu/users/'+name+'/messages/count')
     .then(response => response.json())
     .then(data => {
 
